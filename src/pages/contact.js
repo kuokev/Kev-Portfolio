@@ -21,7 +21,7 @@ const ContactPage = () => {
         <p>Let's get in touch!</p>
         <div className="contact__icon">
           <a
-            href="https://www.linkedin.com/in/arslaanamar/"
+            href="https://www.linkedin.com/in/kuokev/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -30,7 +30,7 @@ const ContactPage = () => {
             </svg>
           </a>
 
-          <a
+{/*           <a
             href="https://github.com/a2zarslaan"
             target="_blank"
             rel="noopener noreferrer"
@@ -38,9 +38,9 @@ const ContactPage = () => {
             <svg className="contact__icon-item">
               <use xlinkHref={`#${github.id}`} />
             </svg>
-          </a>
+          </a> */}
 
-          <a
+{/*           <a
             href="https://dribbble.com/arslaanamar/shots"
             target="_blank"
             rel="noopener noreferrer"
@@ -64,7 +64,7 @@ const ContactPage = () => {
             <svg className="contact__icon-item">
               <use xlinkHref={`#${insta.id}`} />
             </svg>
-          </a>
+          </a> */}
         </div>
       </Container>
     </Layout>
