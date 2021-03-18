@@ -75,11 +75,11 @@ function useEventListener(eventName, handler, element = document) {
     const onMouseEnter = React.useCallback(() => setIsVisible(true), [])
     const onMouseLeave = React.useCallback(() => setIsVisible(false), [])
   
-    useEventListener('mousemove', onMouseMove, document)
-    useEventListener('mousedown', onMouseDown, document)
-    useEventListener('mouseup', onMouseUp, document)
-    useEventListener('mouseenter', onMouseEnter, document)
-    useEventListener('mouseleave', onMouseLeave, document)
+    useEventListener('mousemove', onMouseMove)
+    useEventListener('mousedown', onMouseDown)
+    useEventListener('mouseup', onMouseUp)
+    useEventListener('mouseenter', onMouseEnter)
+    useEventListener('mouseleave', onMouseLeave)
   
     React.useEffect(() => {
       if (isActive) {
