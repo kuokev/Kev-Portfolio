@@ -6,6 +6,8 @@ I've since gone through their initial tutorial projects, getting a better unders
 
 I was able to deploy the website via Netlify at [https://sleepy-turing-af1f56.netlify.app/](https://sleepy-turing-af1f56.netlify.app/), since I'm already using my allocated Github Page for hosting a past project (like... really way back, in 2016). 
 
+**4:39am Update:** Testing a modified pointer. Seems to be throwing an error when navigating to a new page. (Probably doing things before the page loads fully? Not sure how to fix though :\ )
+
 
 ## Future State of Portfolio
 I want to [​add animations​](https://www.joshwcomeau.com/react/boop/) to the website using things like react-spring. I could try ​adding [different page transitions](https://css-tricks.com/animating-between-views-in-react/)​ as well. Or ​[a laser pointer-like cursor](https://codepen.io/StephenScaff/pen/Jjdveyw)​.

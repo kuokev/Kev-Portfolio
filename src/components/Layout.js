@@ -19,11 +19,12 @@ const Layout = ({ children, pageName }) => {
   return (
     <>
       <Helmet bodyAttributes={{ class: className }}>
+
         <title>Gatsby Site</title>
       </Helmet>
       <div className="wrapper">
         <Header />
-        
+
         <main>{children}</main>
         <Footer />
       </div>
@@ -34,5 +35,8 @@ const Layout = ({ children, pageName }) => {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
+
+
+
 
 export default Layout;
