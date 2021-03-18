@@ -19,12 +19,13 @@
 
   .cover {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    align-items: left;
+    justify-content: left;
 
     img {
-      height: 40vh;
+      height: 25vh;
+      margin: -3rem;
+      padding-bottom: 3rem;
     }
   }
 }
