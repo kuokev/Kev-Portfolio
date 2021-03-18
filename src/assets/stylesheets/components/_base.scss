@@ -99,9 +99,9 @@ main {
   font-size: 2rem;
 }
 
+
 h1::selection {
-  background-color: var(--color-purple);
-  color: var(--color-white);
+  background-color: var(--color-white);
 }
 
 p::selection,

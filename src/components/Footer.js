@@ -30,7 +30,7 @@ const Footer = () => {
         </p>
         <div className="footer__icons">
           <a
-            href="https://www.linkedin.com/in/arslaanamar/"
+            href="https://www.linkedin.com/in/kuokev/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -39,7 +39,7 @@ const Footer = () => {
             </svg>
           </a>
 
-          <a
+{/*           <a
             href="https://github.com/a2zarslaan"
             target="_blank"
             rel="noopener noreferrer"
@@ -47,9 +47,9 @@ const Footer = () => {
             <svg className="footer__icons-item">
               <use xlinkHref={`#${github.id}`} />
             </svg>
-          </a>
+          </a> */}
 
-          <a href="mailto:amar.arslaan@gmail.com" rel="noopener noreferrer">
+          <a href="mailto:kuokev@uw.edu" rel="noopener noreferrer">
             <svg className="footer__icons-item">
               <use xlinkHref={`#${mail.id}`} />
             </svg>
