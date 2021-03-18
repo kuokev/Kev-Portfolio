@@ -41,4 +41,4 @@ I will have to continue work on the portfolio website past the stated due date t
 
 ## Credits
 
-The template and project structure was inspired by [Colby Fayok's Gatsy Starter](https://github.com/colbyfayock/gatsby-starter-sass)
+The template and project structure was inspired by [Colby Fayok's Gatsy Starter](https://github.com/colbyfayock/gatsby-starter-sass) and [Sasslan's Gatsby Template](https://github.com/a2zarslaan/gatsby-starter-sasslan).
