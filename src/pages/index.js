@@ -1,4 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from 'react';
+// import { Container } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
+import { Link } from 'react-scroll';
+
 import Helmet from "react-helmet";
 
 import Layout from "components/Layout";
@@ -8,6 +12,18 @@ import img_gatsby from "assets/images/kevin_bird.png";
 
 
 const IndexPage = () => {
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth > 769) {
+      setIsDesktop(true);
+      setIsMobile(false);
+    } else {
+      setIsMobile(true);
+      setIsDesktop(false);
+    }
+  }, []);
   
   return (
     <Layout pageName="home">
@@ -24,6 +40,16 @@ const IndexPage = () => {
         </p>
         <h1 className="heading">Hello, I'm Kevin! </h1>
         <p>[Add one of those cool fill-in-the-blank transition texts later]</p>
+
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <p className="hero-cta">
+            <span className="cta-btn cta-btn--hero">
+              <Link to="about" smooth duration={1000}>
+                {'Test fade in'}
+              </Link>
+            </span>
+          </p>
+        </Fade>
       </Container>
       
     </Layout>
@@ -108,11 +134,11 @@ function AnimatedCursor({
   const onMouseEnter = React.useCallback(() => setIsVisible(true), [])
   const onMouseLeave = React.useCallback(() => setIsVisible(false), [])
 
-  useEventListener('mousemove', onMouseMove)
-  useEventListener('mousedown', onMouseDown)
-  useEventListener('mouseup', onMouseUp)
-  useEventListener('mouseenter', onMouseEnter)
-  useEventListener('mouseleave', onMouseLeave)
+  useEventListener('mousemove', onMouseMove, document)
+  useEventListener('mousedown', onMouseDown, document)
+  useEventListener('mouseup', onMouseUp, document)
+  useEventListener('mouseenter', onMouseEnter, document)
+  useEventListener('mouseleave', onMouseLeave, document)
 
   React.useEffect(() => {
     if (isActive) {
